@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>お問い合わせ｜葛飾区金町の金・宝石の質屋なら株式会社千代田屋</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link href="/js/slick/slick.css" rel="stylesheet" type="text/css" />
+<link href="/js/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+<link href="/css/animate.css" rel="stylesheet" type="text/css">
+<!-- ブラウザの横幅が641px以上の場合 -->
+<link href="/css/pc.css" rel="stylesheet" type="text/css" media="screen and (min-width: 641px)" />
+<!-- ブラウザの横幅が640px以下の場合 -->
+<link href="/css/sp.css" rel="stylesheet" type="text/css" media="screen and (max-width: 640px)" />
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/wow.min.js"></script>
+<script src="/js/index.js"></script>
+<script>
+$(function() {
+    $('.slider').slick({
+        dots:true,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 5000,
+        speed: 2000,
+     });
+});    
+</script>
+<script>
+  wow = new WOW(
+	{
+	boxClass: 'wow', // default
+	animateClass: 'animated', // default
+	offset:0// アニメーションをスタートさせる距離
+	}
+  );
+  wow.init();
+</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'oxs6ypu',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</head>
+<body>
+<div id="wrapper" class="inquiry">
+	<!-- ***** Start Header Area ***** -->
+	<!--#include virtual="/ssi/header.html" -->
+	<!-- ***** //End Header Area ***** -->
+	<article id="article">
+		<div class="pagetitle">
+			<div class="inner">
+				<img src="/img/inquiry/mv01_pc.png" alt="" class="image-switch">
+			</div>
+        </div>
+		<section class="section01">
+			<div class="inner">
+                <p class="inquiry-intro">ご入力いただきました個人情報は、お問い合わせ内容に関するご対応のため<br class="only-pc">
+                弊社担当よりご連絡させていただく場合にのみ使用し、その他の目的には一切使用いたしません。</p>
+                <div class="basic-box inquiry-box">
+                    <form method="post" action="mail.php">
+                        <table border="0" cellpadding="0" cellspacing="0" class="basic-table inquiry-table">
+                            <tr>
+                                <th class="must">ご用件</th>
+                                <td>
+                                    <select name="ご用件">
+                                        <option value="">選択してください</option>
+                                        <option value="質預かりについて">質預かりについて</option>
+                                        <option value="買取について">買取について</option>
+                                        <option value="販売について">販売について</option>
+                                        <option value="その他">その他</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="must">お名前</th>
+                                <td><input size="20" type="text" name="お名前" /></td>
+                            </tr>
+                            <tr>
+                                <th class="must">ふりがな</th>
+                                <td><input size="20" type="text" name="ふりがな" /></td>
+                            </tr>
+                            <tr>
+                                <th class="must">メールアドレス</th>
+                                <td><input size="30" type="text" name="Email" /></td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td><input size="30" type="text" name="電話番号" /></td>
+                            </tr>
+                            <tr>
+                                <th>お問い合わせ内容</th>
+                                <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="no-border submit"><div class="submit-wrapper"><input type="submit" value="問い合わせる" /></div></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+			</div>
+		</section>
+	</article>
+	<!-- ***** Start Header Area ***** -->
+	<!--#include virtual="/ssi/footer.html" -->
+	<!-- ***** //End Header Area ***** -->
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> 
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!--要素の高さを揃える-->
+<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+<script>
+$(function(){
+	$('.matchHeight').matchHeight();
+});
+</script>
+</body>
+</html>
